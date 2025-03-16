@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/Youtube_Clone/images/logos/mainlogo.png">
+  <link rel="stylesheet" href="video.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="sidebar.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Youtube</title>
+</head>
+
+<body>
+
+  <!--HEADER SECTION-->
+  <header class="header">
+    <div class="left-section">
+      <img class="options" src="/Youtube_Clone/images/icons/options.png">
+      <img class="youtube-logo" src="/Youtube_Clone/images/icons/youtube.png">
+    </div>
+    <div class="center-section">
+      <input class="search-bar" type="text" placeholder="Search">
+      <button class="search-icon">
+        <img src="/Youtube_Clone/images/icons/search.png">
+        <div class="tool-tip">Search</div>
+      </button>
+      <button class="voice-search">
+        <img src="/Youtube_Clone/images/icons/voice.png">
+        <div class="tool-tip">Search with your Voice</div>
+      </button>
+    </div>
+    <div class="right-section">
+      <div class="create-icon">
+        <img class="create" src="/Youtube_Clone/images/icons/create.png">
+        <div class="tool-tip">Create</div>
+      </div>
+      <div class="apps-icon">
+        <img class="apps" src="/Youtube_Clone/images/icons/youtubeapps.png">
+        <div class="tool-tip">Youtube Apps</div>
+      </div>
+      <div class="notification-section">
+        <div class="notification">
+          <img class="notification-bell" src="/Youtube_Clone/images/icons/notificiationbell.png">
+          <div class="notification-count">4</div>
+        </div>
+        <div class="tool-tip">Notifications</div>
+      </div>
+      <div class="profile-section">
+        <img class="profile-icon-current" src="/Youtube_Clone/images/icons/profile.png">
+        <div class="tool-tip">My Profile</div>
+      </div>
+    </div>  
+  </header>
+
+  <!--SIDE BAR SECTION-->
+  <nav class="side-bar">
+    <div class="sidebar-link">
+      <img src="/Youtube_Clone/images/side-bar icons/home.png">
+      <div>Home</div>
+    </div>
+    <div class="sidebar-link" data-channel-url="https://www.youtube.com/feed/trending?bp=6gQJRkVleHBsb3Jl" onclick="handleClick(this)">
+      <img src="/Youtube_Clone/images/side-bar icons/explore.png">
+      <div>Explore</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="/Youtube_Clone/images/side-bar icons/subscriptions.png">
+      <div>Subscriptions</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="/Youtube_Clone/images/side-bar icons/originals.png">
+      <div>Originals</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="/Youtube_Clone/images/side-bar icons/youtube_music.png">
+      <div>Youtube Music</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="/Youtube_Clone/images/side-bar icons/library.png">
+      <div>Library</div>
+    </div> 
+  </nav>
+
+  <!--VIDEO SECTION-->
+  <main>
+    <section class="video-grid">
+      <div class="video-preview">
+        <div  class="thumbnail-row">
+          <img class="thumbnail" src="/Youtube_Clone/images/thumbnail/thumbnail1.png" data-channel-url="https://youtu.be/-Y5dbh1k8dk?si=0oSMq6sRE5z7wSOu" onclick="handleClick(this)">
+          <div class="video-time">8:58</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo1.jpg" data-channel-url="https://www.youtube.com/@sammy_han" onclick="handleClick(this)">
+            <div class="tooltip">
+              <div class="small-profile-picture">
+                <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo1.jpg">
+              </div>
+              <div class="channel-info">
+                <p class="video-title">
+                  Sammy Han
+                </p>
+                <p class="video-author">
+                  13K Subscribers
+                </p>
+                <p class="video-stats">
+                  25 videos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info" data-channel-url="https://youtu.be/-Y5dbh1k8dk?si=0oSMq6sRE5z7wSOu" onclick="handleClick(this)">
+            <p class="video-title">
+              We Won Our First 48 Hour Hackathon!
+            </p>
+            <p class="video-author">
+              Sammy Han
+            </p>
+            <p class="video-stats">
+              258K views &middot 6 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div  class="thumbnail-row">
+          <img class="thumbnail" src="/Youtube_Clone/images/thumbnail/thumbnail2.png" data-channel-url="https://youtu.be/Cd8PpxUqWos?si=hH1uY1SCe9H4Z-Uw" onclick="handleClick(this)">
+          <div class="video-time">3:26</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo2.png" data-channel-url="https://www.youtube.com/@gyunana__" onclick="handleClick(this)">
+            <div class="tooltip">
+              <div class="small-profile-picture">
+                <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo2.png">
+              </div>
+              <div class="channel-info">
+                <p class="video-title">
+                  Gyunana Carat
+                </p>
+                <p class="video-author">
+                  2.43K Subscribers
+                </p>
+                <p class="video-stats">
+                  10 videos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info" data-channel-url="https://youtu.be/Cd8PpxUqWos?si=hH1uY1SCe9H4Z-Uw" onclick="handleClick(this)">
+            <p class="video-title">
+              SEVENTEEN - Shadow [BE THE SUN JAKARTA ADDITIONAL SHOW] 221228
+            </p>
+            <p class="video-author">
+              Gyunana Carat
+            </p>
+            <p class="video-stats">
+              4.3M views &middot 2 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div  class="thumbnail-row">
+          <img class="thumbnail" src="/Youtube_Clone/images/thumbnail/thumbnail3.png" data-channel-url="https://youtu.be/1V4yEpbc-z0?si=CuCvhI91StP92CXQ" onclick="handleClick(this)">
+          <div class="video-time">49:44</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo3.png" data-channel-url="https://www.youtube.com/@SolLife_" onclick="handleClick(this)">
+            <div class="tooltip">
+              <div class="small-profile-picture">
+                <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo3.png">
+              </div>
+              <div class="channel-info">
+                <p class="video-title">
+                  Sol Life
+                </p>
+                <p class="video-author">
+                  429K Subscribers
+                </p>
+                <p class="video-stats">
+                  121 videos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info" data-channel-url="https://youtu.be/1V4yEpbc-z0?si=CuCvhI91StP92CXQ" onclick="handleClick(this)">
+            <p class="video-title">
+              10 Best Cherry Blossom Spots in Seoul 🌸 | Aesthetic cafes, Hangang picnic | Spring in Seoul VLOG
+            </p>
+            <p class="video-author">
+              Sol Life
+            </p>
+            <p class="video-stats">
+              339K views &middot 9 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div  class="thumbnail-row">
+          <img class="thumbnail" src="/Youtube_Clone/images/thumbnail/thumbnail4.png" data-channel-url="https://youtu.be/52lZmIafep4?si=InWQd37fl2dkE46E" onclick="handleClick(this)">
+          <div class="video-time">49:44</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo4.png" data-channel-url="https://www.youtube.com/@TEDx" onclick="handleClick(this)">
+            <div class="tooltip">
+              <div class="small-profile-picture">
+                <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo4.png">
+              </div>
+              <div class="channel-info">
+                <p class="video-title">
+                  TEDx Talks
+                </p>
+                <p class="video-author">
+                  42.6M Subscribers
+                </p>
+                <p class="video-stats">
+                  231K videos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info" data-channel-url="https://youtu.be/52lZmIafep4?si=InWQd37fl2dkE46E" onclick="handleClick(this)">
+            <p class="video-title">
+              Self Worth Theory: The Key to Understanding & Overcoming Procrastination | Nic Voge | TEDxPrincetonU
+            </p>
+            <p class="video-author">
+              TEDx Talks
+            </p>
+            <p class="video-stats">
+              2.9M views &middot 7 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div  class="thumbnail-row">
+          <img class="thumbnail" src="/Youtube_Clone/images/thumbnail/thumbnail5.png" data-channel-url="https://youtu.be/csdBWEbEab4?si=qwAqq6N32z1Zrsk7" onclick="handleClick(this)">
+          <div class="video-time">4:36</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo5.png" data-channel-url="https://www.youtube.com/@HEADLINERJK" onclick="handleClick(this)">
+            <div class="tooltip">
+              <div class="small-profile-picture">
+                <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo5.png">
+              </div>
+              <div class="channel-info">
+                <p class="video-title">
+                  HEADLINER
+                </p>
+                <p class="video-author">
+                  872K Subscribers
+                </p>
+                <p class="video-stats">
+                  215 videos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              231120 GOLDEN LIVE ON STAGE 'Still With You' / BTS JUNGKOOK FOCUS FANCAM 방탄소년단 정국 직캠
+            </p>
+            <p class="video-author">
+              HEADLINER
+            </p>
+            <p class="video-stats">
+              883K views &middot 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div  class="thumbnail-row">
+          <img class="thumbnail" src="/Youtube_Clone/images/thumbnail/thumbnail6.png" data-channel-url="https://youtu.be/lOxcP9gILko?si=vP2C0GNClarX3iLs" onclick="handleClick(this)">
+          <div class="video-time">25:40</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo6.png" data-channel-url="https://www.youtube.com/channel/UCfkXDY7vwkcJ8ddFGz8KusA" onclick="handleClick(this)">
+            <div class="tooltip">
+              <div class="small-profile-picture">
+                <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo6.png">
+              </div>
+              <div class="channel-info" data-channel-url="https://youtu.be/lOxcP9gILko?si=vP2C0GNClarX3iLs" onclick="handleClick(this)">
+                <p class="video-title">
+                  SEVENTEEN
+                </p>
+                <p class="video-author">
+                  13.8M Subscribers
+                </p>
+                <p class="video-stats">
+                  2.7K videos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              [GOING SEVENTEEN] EP.74 권순영 찾기 #1 (Finding KSY #1)
+            </p>
+            <p class="video-author">
+              SEVENTEEN
+            </p>
+            <p class="video-stats">
+              4.9M views &middot 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div  class="thumbnail-row">
+          <img class="thumbnail" src="/Youtube_Clone/images/thumbnail/thumbnail7.png"  data-channel-url="https://youtu.be/mt4wezFpLvA?si=NulVyxPGEWG7F9-T" onclick="handleClick(this)">
+          <div class="video-time">1:53</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo7.png" data-channel-url="https://www.youtube.com/@netflixkcontent" onclick="handleClick(this)">
+            <div class="tooltip">
+              <div class="small-profile-picture">
+                <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo7.png">
+              </div>
+              <div class="channel-info">
+                <p class="video-title">
+                  Netflix K-Content
+                </p>
+                <p class="video-author">
+                  4.89M Subscribers
+                </p>
+                <p class="video-stats">
+                  3.7K videos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info" data-channel-url="https://youtu.be/mt4wezFpLvA?si=NulVyxPGEWG7F9-T" onclick="handleClick(this)">
+            <p class="video-title">
+              Mr. Plankton | Official Trailer | Netflix EN-SUB
+            </p>
+            <p class="video-author">
+              Netflix K-Content
+            </p>
+            <p class="video-stats">
+              667K views &middot 4 months ago
+            </p>
+          </div>    
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div  class="thumbnail-row">
+          <img class="thumbnail" src="/Youtube_Clone/images/thumbnail/thumbnail8.png" data-channel-url="https://youtu.be/JpYA7WXkHyI?si=6znH8RlbjwoI20xV" onclick="handleClick(this)">
+          <div class="video-time">14:55</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo8.png" data-channel-url="https://www.youtube.com/@entreprenuership_opportunities" onclick="handleClick(this)">
+            <div class="tooltip">
+              <div class="small-profile-picture">
+                <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo8.png">
+              </div>
+              <div class="channel-info">
+                <p class="video-title">
+                  EO
+                </p>
+                <p class="video-author">
+                  415K Subscribers
+                </p>
+                <p class="video-stats">
+                  218 videos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info"  data-channel-url="https://youtu.be/JpYA7WXkHyI?si=6znH8RlbjwoI20xV" onclick="handleClick(this)">
+            <p class="video-title">
+              How to be a creative thinker | Carnegie Mellon University Po-Shen Loh
+            </p>
+            <p class="video-author">
+              EO
+            </p>
+            <p class="video-stats">
+              2.3M views &middot 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div  class="thumbnail-row">
+          <img class="thumbnail" src="/Youtube_Clone/images/thumbnail/thumbnail9.png" data-channel-url="https://youtu.be/imhmn4r0gic?si=jlGHj1ULeAi6W4za" onclick="handleClick(this)">
+          <div class="video-time">28:21</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo9.png" data-channel-url="https://www.youtube.com/@worldhaspostrock" onclick="handleClick(this)">
+            <div class="tooltip">
+              <div class="small-profile-picture">
+                <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo9.png">
+              </div>
+              <div class="channel-info">
+                <p class="video-title">
+                  Worldhaspostrock
+                </p>
+                <p class="video-author">
+                  308K Subscribers
+                </p>
+                <p class="video-stats">
+                  1.6K videos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info" data-channel-url="https://youtu.be/imhmn4r0gic?si=jlGHj1ULeAi6W4za" onclick="handleClick(this)">
+            <p class="video-title">
+              it is one of those nights
+            </p>
+            <p class="video-author">
+              Worldhaspostrock
+            </p>
+            <p class="video-stats">
+              6.9M views &middot 5 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div  class="thumbnail-row">
+          <img class="thumbnail" src="/Youtube_Clone/images/thumbnail/thumbnail10.png" data-channel-url="https://youtu.be/S-wR4mp4ySw?si=y40FBaU-CI7egejw" onclick="handleClick(this)">
+          <div class="video-time">3:19</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo10.png" data-channel-url="https://www.youtube.com/@oniiiiisam_" onclick="handleClick(this)">
+            <div class="tooltip">
+              <div class="small-profile-picture">
+                <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo10.png">
+              </div>
+              <div class="channel-info">
+                <p class="video-title">
+                  Onisam
+                </p>
+                <p class="video-author">
+                  106K Subscribers
+                </p>
+                <p class="video-stats">
+                  2 videos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info" data-channel-url="https://youtu.be/S-wR4mp4ySw?si=y40FBaU-CI7egejw" onclick="handleClick(this)">
+            <p class="video-title">
+              “HEATHER” || by: Conan Gray (OC Animatic)
+            </p>
+            <p class="video-author">
+              Onisam
+            </p>
+            <p class="video-stats">
+              10M views &middot 3 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div  class="thumbnail-row">
+          <img class="thumbnail" src="/Youtube_Clone/images/thumbnail/thumbnail12.png" data-channel-url="https://youtu.be/lPXi-5XhDPE?si=M8bum7P6E3SHQjo-" onclick="handleClick(this)">
+          <div class="video-time">24:17</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo12.png" data-channel-url="https://www.youtube.com/@NephilistMusic" onclick="handleClick(this)">
+            <div class="tooltip">
+              <div class="small-profile-picture">
+                <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo12.png">
+              </div>
+              <div class="channel-info">
+                <p class="video-title">
+                  Nephilist
+                </p>
+                <p class="video-author">
+                  14.8K Subscribers
+                </p>
+                <p class="video-stats">
+                  3 videos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info" data-channel-url="https://youtu.be/lPXi-5XhDPE?si=M8bum7P6E3SHQjo-" onclick="handleClick(this)">
+            <p class="video-title">
+              running away | dreamcore playlist •°
+            </p>
+            <p class="video-author">
+              Nephilist
+            </p>
+            <p class="video-stats">
+              8.4M views &middot 2 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div  class="thumbnail-row">
+          <img class="thumbnail" src="/Youtube_Clone/images/thumbnail/thumbnail11.png" data-channel-url="https://youtu.be/dKik18br2w8?si=yp5PSZABWSYqkhGJ" onclick="handleClick(this)">
+          <div class="video-time">7:22</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo11.png" data-channel-url="https://www.youtube.com/channel/UCLkAepWjdylmXSltofFvsYQ" onclick="handleClick(this)">
+            <div class="tooltip">
+              <div class="small-profile-picture">
+                <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo11.png">
+              </div>
+              <div class="channel-info">
+                <p class="video-title">
+                  BANGTANTV
+                </p>
+                <p class="video-author">
+                  79.9M Subscribers
+                </p>
+                <p class="video-stats">
+                  2.7K videos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info" data-channel-url="https://youtu.be/dKik18br2w8?si=yp5PSZABWSYqkhGJ" onclick="handleClick(this)">
+            <p class="video-title">
+              V 'FRI(END)'S MV Reaction 2
+            </p>
+            <p class="video-author">
+              BANGTANTV
+            </p>
+            <p class="video-stats">
+              4.7M views &middot 11 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div  class="thumbnail-row">
+          <img class="thumbnail" src="/Youtube_Clone/images/thumbnail/thumbnail13.png" data-channel-url="https://youtu.be/RmLSy-4xx54?si=r3OA0jS5zS3ACFw_" onclick="handleClick(this)">
+          <div class="video-time">33:04</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo6.png" data-channel-url="https://www.youtube.com/channel/UCfkXDY7vwkcJ8ddFGz8KusA" onclick="handleClick(this)">
+            <div class="tooltip">
+              <div class="small-profile-picture">
+                <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo6.png">
+              </div>
+              <div class="channel-info">
+                <p class="video-title">
+                  SEVENTEEN
+                </p>
+                <p class="video-author">
+                  13.8M Subscribers
+                </p>
+                <p class="video-stats">
+                  2.7K videos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info" data-channel-url="https://youtu.be/RmLSy-4xx54?si=r3OA0jS5zS3ACFw_" onclick="handleClick(this)">
+            <p class="video-title">
+              [GOING SEVENTEEN] EP.55 전원우일기 #2 (WONWOO's Diary #2)
+            </p>
+            <p class="video-author">
+              SEVENTEEN
+            </p>
+            <p class="video-stats">
+              4.9M views &middot 2 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div  class="thumbnail-row">
+          <img class="thumbnail" src="/Youtube_Clone/images/thumbnail/thumbnail14.png" data-channel-url="https://youtu.be/68Ry6tXRxUM?si=CDqmg1SXzimc6TCs" onclick="handleClick(this)">
+          <div class="video-time">2:24</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo13.png" data-channel-url="https://www.youtube.com/@raflx4815" onclick="handleClick(this)">
+            <div class="tooltip">
+              <div class="small-profile-picture">
+                <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo13.png">
+              </div>
+              <div class="channel-info">
+                <p class="video-title">
+                  Raflx
+                </p>
+                <p class="video-author">
+                  1.14K Subscribers
+                </p>
+                <p class="video-stats">
+                  12 videos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info" data-channel-url="https://youtu.be/68Ry6tXRxUM?si=CDqmg1SXzimc6TCs" onclick="handleClick(this)">
+            <p class="video-title">
+              Reiner describing what he experienced in Paradise Island
+            </p>
+            <p class="video-author">
+              Raflx
+            </p>
+            <p class="video-stats">
+              3.4M views &middot 4 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div  class="thumbnail-row">
+          <img class="thumbnail" src="/Youtube_Clone/images/thumbnail/thumbnail15.png" data-channel-url="https://youtu.be/recdG_ekfMY?si=iUupgu1sxdcz9B0v" onclick="handleClick(this)">
+          <div class="video-time">7:57</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo7.png" data-channel-url="https://www.youtube.com/@netflixkcontent" onclick="handleClick(this)">
+            <div class="tooltip">
+              <div class="small-profile-picture">
+                <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo7.png">
+              </div>
+              <div class="channel-info">
+                <p class="video-title">
+                  Netflix K-Content
+                </p>
+                <p class="video-author">
+                  4.89M Subscribers
+                </p>
+                <p class="video-stats">
+                  3.7K videos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info" data-channel-url="https://youtu.be/recdG_ekfMY?si=iUupgu1sxdcz9B0v" onclick="handleClick(this)">
+            <p class="video-title">
+              [Reaction] IU & Bo-gum react to their kiss scene | When Life Gives You Tangerines | Netflix [EN CC]
+            </p>
+            <p class="video-author">
+              Netflix K-Content
+            </p>
+            <p class="video-stats">
+              425K views &middot 7 days ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div  class="thumbnail-row">
+          <img class="thumbnail" src="/Youtube_Clone/images/thumbnail/thumbnail16.png" data-channel-url="https://youtu.be/k5rEQ2wFPUw?si=BLDuyb2EGnc8VqAn" onclick="handleClick(this)">
+          <div class="video-time">2:03:02</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo14.png" data-channel-url="https://www.youtube.com/@nobodyplaylists" onclick="handleClick(this)">
+            <div class="tooltip">
+              <div class="small-profile-picture">
+                <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo14.png">
+              </div>
+              <div class="channel-info">
+                <p class="video-title">
+                  nobody
+                </p>
+                <p class="video-author">
+                  996K Subscribers
+                </p>
+                <p class="video-stats">
+                  268 videos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info" data-channel-url="https://youtu.be/k5rEQ2wFPUw?si=BLDuyb2EGnc8VqAn" onclick="handleClick(this)">
+            <p class="video-title">
+              a playlist for night studies (dark academia)
+            </p>
+            <p class="video-author">
+              nobody
+            </p>
+            <p class="video-stats">
+              10M views &middot 3 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div  class="thumbnail-row">
+          <img class="thumbnail" src="/Youtube_Clone/images/thumbnail/thumbnail17.png" data-channel-url="https://youtu.be/H0nEHILUKUU?si=TUIoRo1i3PY40YpA" onclick="handleClick(this)">
+          <div class="video-time">8:08</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo15.png" data-channel-url="https://www.youtube.com/@GrimWisdom" onclick="handleClick(this)">
+            <div class="tooltip">
+              <div class="small-profile-picture">
+                <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo15.png">
+              </div>
+              <div class="channel-info">
+                <p class="video-title">
+                  Grim Wisdom
+                </p>
+                <p class="video-author">
+                  50.8K Subscribers
+                </p>
+                <p class="video-stats">
+                  29 videos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info" data-channel-url="https://youtu.be/H0nEHILUKUU?si=TUIoRo1i3PY40YpA" onclick="handleClick(this)">
+            <p class="video-title">
+              Become a STUDY "MACHINE" In 14 Days With PROVEN Methods
+            </p>
+            <p class="video-author">
+              Grim Wisdom
+            </p>
+            <p class="video-stats">
+              41K views &middot 2 days ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div  class="thumbnail-row">
+          <img class="thumbnail" src="/Youtube_Clone/images/thumbnail/thumbnail18.png" data-channel-url="https://youtu.be/L0prAqSeyiY?si=LEwArC25LNdgGBIS" onclick="handleClick(this)">
+          <div class="video-time">9:12</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo16.png" data-channel-url="https://www.youtube.com/@Runapi7" onclick="handleClick(this)">
+            <div class="tooltip">
+              <div class="small-profile-picture">
+                <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo16.png">
+              </div>
+              <div class="channel-info">
+                <p class="video-title">
+                  Runapi
+                </p>
+                <p class="video-author">
+                  27.3K Subscribers
+                </p>
+                <p class="video-stats">
+                  10 videos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info"  data-channel-url="https://youtu.be/L0prAqSeyiY?si=LEwArC25LNdgGBIS" onclick="handleClick(this)">
+            <p class="video-title">
+              First Day of High School in Japan | Japanese High School Exchange 🇯🇵 [vlog #1]
+            </p>
+            <p class="video-author">
+              Runapi
+            </p>
+            <p class="video-stats">
+              393K views &middot 5 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div  class="thumbnail-row">
+          <img class="thumbnail" src="/Youtube_Clone/images/thumbnail/thumbnail19.png" data-channel-url="https://youtu.be/KSbNUjI0pnE?si=EELSQCus7Mb_Ja8l" onclick="handleClick(this)">
+          <div class="video-time">4:58</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo17.png" data-channel-url="https://www.youtube.com/@SR-qb9fv" onclick="handleClick(this)">
+            <div class="tooltip">
+              <div class="small-profile-picture">
+                <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo17.png">
+              </div>
+              <div class="channel-info">
+                <p class="video-title">
+                  S&R
+                </p>
+                <p class="video-author">
+                  3.8K Subscribers
+                </p>
+                <p class="video-stats">
+                  102 videos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info" data-channel-url="https://youtu.be/KSbNUjI0pnE?si=EELSQCus7Mb_Ja8l" onclick="handleClick(this)">
+            <p class="video-title">
+              no. 1 party anthem - arctic monkeys (slowed + reverb)
+            </p>
+            <p class="video-author">
+              S&R
+            </p>
+            <p class="video-stats">
+              513K views &middot 4 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div  class="thumbnail-row">
+          <img class="thumbnail" src="/Youtube_Clone/images/thumbnail/thumbnail20.png" data-channel-url="https://youtu.be/m-akKNXwvQQ?si=5MCk8RRUYp0bYBW_" onclick="handleClick(this)">
+          <div class="video-time">13:11</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo18.png" data-channel-url="https://www.youtube.com/@Green-Code" onclick="handleClick(this)">
+            <div class="tooltip">
+              <div class="small-profile-picture">
+                <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo18.png">
+              </div>
+              <div class="channel-info">
+                <p class="video-title">
+                  Green Code
+                </p>
+                <p class="video-author">
+                  113K Subscribers
+                </p>
+                <p class="video-stats">
+                  35 videos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info" data-channel-url="https://youtu.be/m-akKNXwvQQ?si=5MCk8RRUYp0bYBW_" onclick="handleClick(this)">
+            <p class="video-title">
+              I Solved 100 LeetCode Problems
+            </p>
+            <p class="video-author">
+              Green Code
+            </p>
+            <p class="video-stats">
+              400K views &middot 5 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div  class="thumbnail-row">
+          <img class="thumbnail" src="/Youtube_Clone/images/thumbnail/thumbnail21.png" data-channel-url="https://youtu.be/ZeWvMDLsw4Q?si=gj5DMfBvo57RPsBm" onclick="handleClick(this)">
+          <div class="video-time">4:00</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo19.png" data-channel-url="https://www.youtube.com/@softerhugs" onclick="handleClick(this)">
+            <div class="tooltip">
+              <div class="small-profile-picture">
+                <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo19.png">
+              </div>
+              <div class="channel-info">
+                <p class="video-title">
+                  softerhugs
+                </p>
+                <p class="video-author">
+                  2.83K Subscribers
+                </p>
+                <p class="video-stats">
+                  73 videos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info" data-channel-url="https://youtu.be/ZeWvMDLsw4Q?si=gj5DMfBvo57RPsBm" onclick="handleClick(this)">
+            <p class="video-title">
+              only by leehi but you're in a cathedral
+            </p>
+            <p class="video-author">
+              softerhugs
+            </p>
+            <p class="video-stats">
+              303K views &middot 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div  class="thumbnail-row">
+          <img class="thumbnail" src="/Youtube_Clone/images/thumbnail/thumbnail22.png" data-channel-url="https://youtu.be/tXlL89ZM_XA?si=Ll7JE5e47zMkj3ir" onclick="handleClick(this)">
+          <div class="video-time">9:56</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo20.png" data-channel-url="https://www.youtube.com/@TinaHuang1" onclick="handleClick(this)" >
+            <div class="tooltip">
+              <div class="small-profile-picture">
+                <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo20.png">
+              </div>
+              <div class="channel-info">
+                <p class="video-title">
+                  Tina Huang
+                </p>
+                <p class="video-author">
+                  799K Subscribers
+                </p>
+                <p class="video-stats">
+                  244 videos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info" data-channel-url="https://youtu.be/tXlL89ZM_XA?si=Ll7JE5e47zMkj3ir" onclick="handleClick(this)">
+            <p class="video-title">
+              How to Choose A Career You Won't Regret
+            </p>
+            <p class="video-author">
+              Tina Huang
+            </p>
+            <p class="video-stats">
+              617K views &middot 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div  class="thumbnail-row">
+          <img class="thumbnail" src="/Youtube_Clone/images/thumbnail/thumbnail23.png" data-channel-url="https://youtu.be/gPpQNzQP6gE?si=xunk3AacMbgKL4yC" onclick="handleClick(this)">
+          <div class="video-time">2:50</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo21.png" data-channel-url="https://www.youtube.com/channel/UC45bAm2O1oaxMVCBY37eunQ" onclick="handleClick(this)">
+            <div class="tooltip">
+              <div class="small-profile-picture">
+                <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo21.png">
+              </div>
+              <div class="channel-info">
+                <p class="video-title">
+                  Akshath
+                </p>
+                <p class="video-author">
+                  809K Subscribers
+                </p>
+                <p class="video-stats">
+                  55K videos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info" data-channel-url="https://youtu.be/gPpQNzQP6gE?si=xunk3AacMbgKL4yC" onclick="handleClick(this)">
+            <p class="video-title">
+              Akshath - Nadaaniyan (Official Video) Aisha Ahmed
+            </p>
+            <p class="video-author">
+              Akshath
+            </p>
+            <p class="video-stats">
+              141M views &middot 8 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div  class="thumbnail-row">
+          <img class="thumbnail" src="/Youtube_Clone/images/thumbnail/thumbnail24.png" data-channel-url="https://youtu.be/5CEDYtJNCbI?si=bn9Q2zIi-yghgFRJ" onclick="handleClick(this)">
+          <div class="video-time">5:36</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo22.png" data-channel-url="https://www.youtube.com/@SonyMusicSouthOfficial" onclick="handleClick(this)">
+            <div class="tooltip">
+              <div class="small-profile-picture">
+                <img  class="profile-picture" src="/Youtube_Clone/images/logos/logo22.png">
+              </div>
+              <div class="channel-info">
+                <p class="video-title">
+                  Sony Music South
+                </p>
+                <p class="video-author">
+                  19.3M Subscribers
+                </p>
+                <p class="video-stats">
+                  4.3K videos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info" data-channel-url="https://youtu.be/5CEDYtJNCbI?si=bn9Q2zIi-yghgFRJ" onclick="handleClick(this)">
+            <p class="video-title">
+              Making of Unnai Kaanadhu Naan - Vishwaroopam
+            </p>
+            <p class="video-author">
+              Sony Music South
+            </p>
+            <p class="video-stats">
+              7.9M views &middot 12 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
